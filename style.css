@@ -18,6 +18,13 @@ body {
     height: 430px;
 }
 
+#linha {
+    position: absolute;
+    top: 289px;
+    left: 1200px;
+}
+
+
 #titulo {
     position: absolute;
     width: 675px;
