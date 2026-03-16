@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at 80% 80%, #4A1E3F 0%, #401435 30%, #300F28 60%, #200A1A 100%);
+}
+
+#decoracaosuperior {
+    position: absolute;
+    top: 74px;
+    left: 79px;
+}
+
+#fotodeperfil {
+    position: absolute;
+    top: 289px;
+    left: 300px;
+    
+    width: 430px;
+    height: 430px;
+}
+
+#titulo {
+    position: absolute;
+    width: 675px;
+    height: 72px;
+    top: 378px;
+    left: 1080px;
+
+
+    color: #FFF;
+    font-family: "Rozha One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#subtitulo{
+    position: absolute;
+    width: 728px;
+    top: 480px;
+    left: 995px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rosarivo';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+#botoesIMG {
+    position: absolute;
+    top: 577px;
+    left: 1250px;
+}
+
+
+#decoracaoinferior {
+    position: absolute;
+    bottom: 70px;
+    left: 1680px;
+}
+
+#botoes {
+    position: relative;
+    display: flex;
+    width: 1005px;
+    height: 70px;
+    top: 772px;
+    left: 502px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 84px;
+}
+
+.botao {
+    border-radius: 25px;
+    background-color: #7B1962;
+    width: 140px;
+    height: 65px;
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
+
+.botao:hover{
+    background-color: #9d3382;
+    transition: 0.5s;
+}
