@@ -1,39 +1,103 @@
 body {
-  margin: 0;
-  background: radial-gradient(circle at 80% 80%, #4A1E3F 0%, #401435 30%, #300F28 60%, #200A1A 100%);
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at 80% 80%, #4A1E3F 0%, #401435 30%, #300F28 60%, #200A1A 100%);
+    position: relative;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#decoracaoinferior, #decoracaosuperior {
+    position: absolute;
 }
 
 #decoracaosuperior {
-    position: absolute;
-    top: 74px;
-    left: 79px;
+    top: 30px;
+    left: 30px;
 }
 
-#fotodeperfil {
-    position: absolute;
-    top: 289px;
-    left: 300px;
+#decoracaoinferior {
+    bottom: 50px;
+    right: 50px;
+}
+
+#botoes {
+    flex-shrink: 0;
+    list-style-type: none;
     
-    width: 430px;
-    height: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    padding: 0;
+
 }
 
-#linha {
-    position: absolute;
-    top: 289px;
-    left: 1200px;
+#botoes li:hover {
+    background: #b33493;
+    transition: 1s;
+    cursor: pointer;
 }
 
+#botoes li {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: #7B1962;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#titulo {
-    position: absolute;
-    width: 675px;
-    height: 72px;
-    top: 378px;
-    left: 1080px;
+#botoes li a {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+    
+}
 
+#botoesIMG {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+}
+
+#botoesIMG li a {
+    display: flex;
+    width: 52px;
+    height: 52px;  
+}
+
+#subtitulo {
+    width: 691px;
 
     color: #FFF;
+    text-align: center;
+    font-family: Rosarivo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#titulo {
+    width: 675px;
+    height: 72px;   
+
+    margin: 12px;
+    color: #FFF;
+    text-align: center;
     font-family: "Rozha One";
     font-size: 64px;
     font-style: normal;
@@ -41,70 +105,37 @@ body {
     line-height: normal;
 }
 
-#subtitulo{
-    position: absolute;
-    width: 728px;
-    top: 480px;
-    left: 995px;
-
-    color: #FFF;
-    text-align: center;
-    font-family: 'Rosarivo';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400px;
-    line-height: normal;
-}
-
-#botoesIMG {
-    position: absolute;
-    top: 577px;
-    left: 1250px;
-}
-
-
-#decoracaoinferior {
-    position: absolute;
-    bottom: 70px;
-    left: 1680px;
-}
-
-#botoes {
-    position: relative;
+#escrita {
+    margin-top: 50px;
+    width: 695px;
+    height: 325px;
     display: flex;
-    width: 1005px;
-    height: 70px;
-    top: 772px;
-    left: 502px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 84px;
+    flex-direction: column;  
+    align-items: center;
+    background-color: #7B1962;
+    padding: 50px;
+    border: 5px solid #FFF;
+    border-radius: 20px;
 }
 
-.botao {
-    border-radius: 25px;
-    background-color: #7B1962;
-    width: 140px;
-    height: 65px;
-    list-style-type: none;
-    font-size: 20px;
+#fotodeperfil {
+    width: 430px;
+    height: 430px;
+    margin-top: 35px;
+}
+
+#apresentacao {
+    margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-a:-webkit-any-link {
-    text-decoration: none;
-    color: #FFF;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
+    gap: 100px;
 
 }
 
-.botao:hover{
-    background-color: #9d3382;
-    transition: 0.5s;
+#apresentacaocombotoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 90px;
 }
+
